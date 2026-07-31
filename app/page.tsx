@@ -425,18 +425,130 @@ export default function LandingPage() {
             );
           })}
         </motion.div>
+        {/* Journey Section */}
+        <motion.section 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="w-full max-w-6xl mx-auto mt-32 pt-20 border-t border-white/5 text-left"
+        >
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-black text-white mb-4">How It Works</h2>
+            <p className="text-zinc-400 text-lg max-w-2xl mx-auto">Your journey from local talent to global professional, mapped in three simple steps.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { step: "01", title: "Connect Data", desc: "Link your academic records, skills, and goals. Our AI instantly analyzes your profile.", icon: "🔗" },
+              { step: "02", title: "Generate Passport", desc: "Watch as AI builds your personalized digital passport with matched opportunities.", icon: "✨" },
+              { step: "03", title: "Execute & Relocate", desc: "Follow the AI-generated timeline and roadmap to achieve your global mobility goals.", icon: "🚀" }
+            ].map((item, i) => (
+              <div key={item.step} className="p-8 rounded-3xl glass-card relative overflow-hidden group">
+                <div className="absolute top-0 right-0 p-6 text-6xl font-black text-white/5 group-hover:text-white/10 transition-colors pointer-events-none">
+                  {item.step}
+                </div>
+                <div className="text-4xl mb-6">{item.icon}</div>
+                <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
+                <p className="text-zinc-400 leading-relaxed text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* Features Section */}
+        <motion.section 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="w-full max-w-6xl mx-auto py-32 text-left"
+        >
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-black text-white mb-4">Supercharge Your Career</h2>
+            <p className="text-zinc-400 text-lg max-w-2xl mx-auto">Everything you need to navigate your professional growth, in one intelligent platform.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="p-8 rounded-3xl glass-card border border-primary/20 bg-primary/5">
+              <Zap className="w-8 h-8 text-primary mb-4" />
+              <h3 className="text-xl font-bold text-white mb-2">Future Simulator</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-4">Toggle life scenarios like "Move to Singapore" or "Master AI" and watch your projected salary, savings, and global mobility scores update in real-time.</p>
+            </div>
+            
+            <div className="p-8 rounded-3xl glass-card border border-purple-500/20 bg-purple-500/5">
+              <Globe className="w-8 h-8 text-purple-400 mb-4" />
+              <h3 className="text-xl font-bold text-white mb-2">Opportunity Graph</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-4">Visually explore the interconnected web of your skills, recommended jobs, scholarships, and government schemes through an interactive React Flow nodal interface.</p>
+            </div>
+            
+            <div className="p-8 rounded-3xl glass-card border border-green-500/20 bg-green-500/5">
+              <Sparkles className="w-8 h-8 text-green-400 mb-4" />
+              <h3 className="text-xl font-bold text-white mb-2">AI Mentor Personas</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-4">Chat with 5 specialized AI advisors (Career Coach, Finance Advisor, etc.) who understand your unique passport data and provide actionable, context-aware guidance.</p>
+            </div>
+
+            <div className="p-8 rounded-3xl glass-card border border-cyan-500/20 bg-cyan-500/5">
+              <Shield className="w-8 h-8 text-cyan-400 mb-4" />
+              <h3 className="text-xl font-bold text-white mb-2">India → SG Mobility</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-4">A dedicated roadmap bridging the talent gap, featuring step-by-step visa transition plans, readiness gauges, and detailed cost-of-living breakdowns.</p>
+            </div>
+          </div>
+        </motion.section>
+
       </main>
 
-      {/* Footer */}
+      {/* Enhanced Footer */}
       <motion.footer
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-        className="relative z-10 py-6 text-center border-t border-white/5"
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        className="relative z-10 pt-16 pb-8 border-t border-white/10 bg-[#09090B]"
       >
-        <p className="text-zinc-600 text-xs">
-          Built for Singapore · India Hackathon 2026 · Powered by Gemini AI
-        </p>
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div className="md:col-span-2">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: "linear-gradient(135deg, #2563EB, #7C3AED)" }}>
+                  <span className="text-white text-xs font-black">OP</span>
+                </div>
+                <span className="text-white font-bold">Opportunity Passport AI</span>
+              </div>
+              <p className="text-zinc-400 text-sm leading-relaxed max-w-sm">
+                Built for the Singapore-India Hackathon 2026. Empowering the next generation of global talent with AI-driven opportunity mapping.
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="text-white font-semibold mb-4">Platform</h4>
+              <ul className="space-y-2 text-sm text-zinc-500">
+                <li className="hover:text-zinc-300 cursor-pointer transition-colors">AI Generator</li>
+                <li className="hover:text-zinc-300 cursor-pointer transition-colors">Interactive Dashboard</li>
+                <li className="hover:text-zinc-300 cursor-pointer transition-colors">Opportunity Graph</li>
+                <li className="hover:text-zinc-300 cursor-pointer transition-colors">Future Simulator</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="text-white font-semibold mb-4">Resources</h4>
+              <ul className="space-y-2 text-sm text-zinc-500">
+                <li className="hover:text-zinc-300 cursor-pointer transition-colors">GitHub Repository</li>
+                <li className="hover:text-zinc-300 cursor-pointer transition-colors">Hackathon Details</li>
+                <li className="hover:text-zinc-300 cursor-pointer transition-colors">Demo Video</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5">
+            <p className="text-zinc-600 text-xs mb-4 md:mb-0">
+              © 2026 Opportunity Passport AI. Built with Next.js, Tailwind, & Framer Motion.
+            </p>
+            <div className="flex items-center gap-4 text-xs font-medium">
+              <span className="text-zinc-500 hover:text-white cursor-pointer transition-colors">Privacy Policy</span>
+              <span className="text-zinc-500 hover:text-white cursor-pointer transition-colors">Terms of Service</span>
+            </div>
+          </div>
+        </div>
       </motion.footer>
     </div>
   );
