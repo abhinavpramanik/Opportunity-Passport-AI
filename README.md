@@ -1,71 +1,67 @@
-# Opportunity Passport AI
+<div align="center">
+  <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/badge-check.svg" width="80" height="80" alt="Logo" />
+  <h1>Opportunity Passport AI</h1>
+  <p><strong>One Intelligent Passport. Unlimited Opportunities.</strong></p>
+  <p>An AI-powered Personal Opportunity Intelligence Platform built for the <strong>Singapore-India Hackathon</strong>.</p>
+  <br />
+  <a href="https://opportunity-passport-ai.vercel.app"><strong>🚀 View Live Demo</strong></a>
+  <br />
+  <br />
+</div>
 
-> **One Intelligent Passport. Unlimited Opportunities.**
+## 🏆 The Vision
 
-An AI-powered Personal Opportunity Intelligence Platform built for the **Singapore-India Hackathon**.
+Traditional resumes are dead. In a rapidly evolving global economy, students and young professionals need more than just a static PDF. They need a living, breathing **Opportunity Passport** that dynamically matches their unique profile to global opportunities.
 
-## 🚀 Vision
+Opportunity Passport AI bridges the gap between raw talent in India and world-class opportunities in Singapore (and globally) by creating an intelligent, interconnected ecosystem of jobs, scholarships, government schemes, and financial pathways.
 
-Transform a traditional resume into a living **Opportunity Passport** that continuously discovers:
-- 💼 Career & Job Opportunities
-- 🎓 Scholarships & Education Funding
-- 🏛️ Government Schemes & Benefits
-- 💰 Financial Guidance & Planning
-- 🛡️ Insurance Recommendations
-- 📚 Learning Pathways & Certifications
-- 🤖 AI Mentor Guidance
-- 🌏 Global Mobility (India → Singapore)
+---
+
+## ✨ Features that Wow Judges
+
+We didn't just build a dashboard; we built a highly polished, interactive experience.
+
+- 🌌 **Cinematic AI Generation Sequence**: A stunning 8-step animated loader that mimics an AI analyzing the user's data in real-time, creating a "wow" moment from the first click.
+- 🪪 **Apple Wallet-Inspired Digital Passport**: A gorgeous, glassmorphism-styled digital identity card complete with dynamic score rings, skills tracking, and AI-generated strengths & gaps.
+- 🕸️ **Interactive Opportunity Graph**: Built with React Flow, this feature lets users visually explore the interconnected web of their skills, jobs, scholarships, and schemes in a beautiful nodal interface.
+- 🔮 **Future Simulator**: Users can toggle life scenarios (e.g., "Master AI", "Move to Singapore") and instantly see how their salary, savings rate, and global mobility scores adjust via live-updating Recharts and Radar charts.
+- 💬 **AI Mentor Chat**: A specialized team of 5 AI personas (Career Coach, Finance Advisor, etc.) with realistic typing animations and contextual chat bubbles to guide the user's journey.
+- ✈️ **Global Mobility Roadmap (India → Singapore)**: A dedicated timeline, readiness gauge, and cost-of-living comparison chart designed specifically for cross-border transitions.
+- 📊 **10+ Deep Modules**: Comprehensive sections for Jobs, Scholarships, Government Schemes, Financial Planning, Insurance, and Learning (Courses & Roadmaps).
+
+---
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Framework | Next.js 15 (App Router) |
-| Language | TypeScript |
-| Styling | Tailwind CSS + shadcn/ui |
-| Animation | Framer Motion |
-| Graph | React Flow |
-| Charts | Recharts |
-| Icons | Lucide React |
+We prioritized a modern, highly performant stack to ensure a premium user experience:
 
-## 📁 Project Structure
+- **Core**: Next.js 15 (App Router), React 19, TypeScript
+- **Styling**: Tailwind CSS with custom glassmorphism and modern gradient utility tokens
+- **Animations**: Framer Motion (for all cinematic transitions, micro-interactions, and layout animations)
+- **Data Visualization**: Recharts (Area charts, Radar charts, Radial bars)
+- **Interactive Graphs**: React Flow (for the nodal Opportunity Graph)
+- **Icons**: Lucide React
+- **Architecture**: Static hardcoded data layer mimicking an AI-generated backend (`/data` folder) to ensure 0-latency demos.
 
-```
-app/                    # Next.js App Router pages
-components/             # Reusable UI components
-  layout/               # Sidebar, AppShell
-  ui/                   # shadcn/ui components
-data/                   # Static hardcoded data
-  user.ts               # Demo user: Alex Sharma
-  passport.ts           # Opportunity Passport scores
-  jobs.ts               # Job recommendations
-  scholarships.ts       # Scholarship listings
-  schemes.ts            # Government schemes
-  finance.ts            # Financial data
-  insurance.ts          # Insurance plans
-  mentor.ts             # AI Mentor personas
-  timeline.ts           # Career timeline
-  notifications.ts      # Alerts & notifications
-  learning.ts           # Courses & roadmap
-  mobility.ts           # India → Singapore data
-  graph.ts              # Opportunity graph nodes
-lib/                    # Utility functions
-types/                  # TypeScript interfaces
-public/                 # Static assets
-context/                # Documentation & specs
-  implementation_plan/  # Phase-wise implementation plans
-```
+---
 
-## 🏃 Getting Started
+## 🏃 Getting Started Locally
 
 ```bash
+# Install dependencies
 npm install
+
+# Run the development server
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000)
 
-## 📋 Implementation Phases
+## 🎯 Demo User Persona
+
+**Alex Sharma** — A 22-year-old B.Tech CSE graduate from Delhi Technological University (DTU), targeting a Software Engineer role in Singapore. The entire demo is populated with personalized data tailored to Alex's specific journey.
+
+## 📋 Hackathon Implementation Phases
 
 | Phase | Status | Description |
 |-------|--------|-------------|
@@ -77,10 +73,6 @@ Open [http://localhost:3000](http://localhost:3000)
 | Phase 6 | ✅ Complete | Interactive: Opportunity Graph, Future Simulator, AI Mentor, Global Mobility |
 | Phase 7 | ✅ Complete | Polish: Career Timeline, full sidebar navigation |
 | Phase 8 | ✅ Complete | Demo Optimization: Final build verified, README updated |
-
-## 🎯 Demo User
-
-**Alex Sharma** — 22 year old B.Tech CSE graduate from Delhi Technological University, targeting a Software Engineer role in Singapore.
 
 ## 📄 License
 
