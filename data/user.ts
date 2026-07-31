@@ -1,0 +1,32 @@
+import type { User } from "@/types";
+
+export const user: User = {
+  id: "alex-sharma-001",
+  name: "Alex Sharma",
+  age: 22,
+  degree: "B.Tech Computer Science & Engineering",
+  university: "Delhi Technological University",
+  gpa: 8.7,
+  tagline: "Full-Stack Developer | AI Enthusiast | Singapore Bound 🇸🇬",
+  goal: "Software Engineer at a top tech company in Singapore",
+  location: "New Delhi, India",
+  targetLocation: "Singapore",
+  email: "alex.sharma@email.com",
+  linkedIn: "linkedin.com/in/alexsharma",
+  github: "github.com/alexsharma",
+  avatar: "AS",
+  skills: [
+    { name: "React", level: "advanced", category: "Frontend" },
+    { name: "Next.js", level: "advanced", category: "Frontend" },
+    { name: "TypeScript", level: "intermediate", category: "Frontend" },
+    { name: "Node.js", level: "intermediate", category: "Backend" },
+    { name: "Python", level: "intermediate", category: "Backend" },
+    { name: "Machine Learning", level: "beginner", category: "AI/ML" },
+    { name: "PostgreSQL", level: "intermediate", category: "Database" },
+    { name: "Docker", level: "beginner", category: "DevOps" },
+    { name: "AWS", level: "beginner", category: "Cloud" },
+    { name: "Tailwind CSS", level: "expert", category: "Frontend" },
+    { name: "Git", level: "advanced", category: "Tools" },
+    { name: "Figma", level: "intermediate", category: "Design" },
+  ],
+};
