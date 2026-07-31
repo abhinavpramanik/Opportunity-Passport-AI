@@ -17,20 +17,26 @@ import {
   Bell,
   ChevronRight,
   Zap,
+  Shield,
+  BookOpen,
+  Clock,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { notifications } from "@/data/notifications";
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/passport", label: "Passport", icon: Zap },
+  { href: "/passport", label: "Passport", icon: BadgeCheck },
   { href: "/opportunities", label: "Opportunities", icon: Briefcase },
   { href: "/graph", label: "Opp. Graph", icon: Share2 },
   { href: "/mentor", label: "AI Mentor", icon: MessageSquare },
   { href: "/simulator", label: "Simulator", icon: TrendingUp },
   { href: "/finance", label: "Finance", icon: PiggyBank },
+  { href: "/insurance", label: "Insurance", icon: Shield },
+  { href: "/learning", label: "Learning", icon: BookOpen },
   { href: "/government", label: "Government", icon: Building2 },
   { href: "/mobility", label: "Mobility", icon: Globe },
+  { href: "/timeline", label: "Timeline", icon: Clock },
   { href: "/settings", label: "Settings", icon: Settings },
 ];
 
